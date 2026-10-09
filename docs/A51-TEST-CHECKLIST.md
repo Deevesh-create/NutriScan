@@ -60,14 +60,14 @@ Phone: Samsung Galaxy A51, One UI 5.1, Android 13. Run each test on the **Pixel 
 
 ### Hardware and permissions
 - [x] **P22** *(8 Oct: allowed; 8:30, 13:00, 19:30 exact alarms scheduled)* Settings → **Meal reminders** on → Android 13 asks to allow notifications → **Allow** → switch stays on
-- [ ] **P23** A reminder arrives (8:30, 13:00 or 19:30; or set the phone's clock 1 minute before one, then set it back)
+- [x] **P23** *(9 Oct: arrived at 13:00 and 19:30, rescheduled for 10 Oct)* A reminder arrives (8:30, 13:00 or 19:30; or set the phone's clock 1 minute before one, then set it back)
 - [x] **P24** *(8 Oct)* Settings → **Fingerprint lock** on → touch the sensor when asked → switch stays on
 - [x] **P25** *(8 Oct: locked after 35 s away, fingerprint unlocked)* Close the app, wait 30 s, reopen → "NutriScan is locked" → fingerprint → unlocks
 - [ ] **P26** Long-press the NutriScan icon → App info → Permissions → Camera → **Don't allow** → Scan barcode → explanation screen, typed barcode still works, no crash
 
 ### New account and deletion (use a **throwaway** account, not your real one)
-- [ ] **P27** Sign out → **Create an account** without ticking the boxes → two red messages; tick both → account created (with S4 on: "Check your email" → confirm → sign in)
-- [ ] **P28** Set a goal → add a food → Settings → **Delete my account and data** → confirm → back to Sign in; that email can't sign in any more
+- [x] **P27** *(10 Oct: throwaway account created after confirming the email)* Sign out → **Create an account** without ticking the boxes → two red messages; tick both → account created (with S4 on: "Check your email" → confirm → sign in)
+- [x] **P28** *(10 Oct: deleted with the password; the same email could sign up again, so the old account was gone)* Set a goal → add a food → Settings → **Delete my account and data** → confirm → back to Sign in; that email can't sign in any more
 
 ### Redesign (8 Oct)
 - [ ] **P31** Today: ring in the middle, Goal / Food / Left on the left, meal totals on the right; macro bars show "% kcal" and "g left"
@@ -76,16 +76,24 @@ Phone: Samsung Galaxy A51, One UI 5.1, Android 13. Run each test on the **Pixel 
 - [ ] **P34** Barcode tab → **Type in barcode** → box appears → `3017620422003` → Nutella, with sat. fat, sugars and salt filled in the **More nutrients** row
 - [ ] **P35** Label tab → point at a pack → panel rows fill in → "Read. Check against the pack" → **Use these values** → Add food filled, including More nutrients
 - [ ] **P36** Today shows "Sat. fat … · Sugars … · Salt … of 6 g" under the macros
-- [ ] **P37** Phone Settings → Display → **Dark mode** on → reopen NutriScan → every screen dark and readable (Today, Add food, scanner sheet, Settings)
+- [x] **P37** *(8 Oct dark, 10 Oct light: both readable)* Phone Settings → Display → **Dark mode** on → reopen NutriScan → every screen dark and readable (Today, Add food, scanner sheet, Settings)
 
 ### Haptics, weight, steps, languages (8 Oct)
-- [ ] **P38** Scan or type a barcode → a short "confirm" buzz; Add food with an empty name → a sharp "reject" buzz; water + → a light tick. *Needs phone Settings → Sounds and vibration → System sound/vibration control → **Touch interactions** on, and the phone not on mute (8 Oct: it was off, so no buzz, as designed)*
+- [ ] **P38** Scan or type a barcode → a short "confirm" buzz; Add food with an empty name → a sharp "reject" buzz; water + → a light tick. *Needs phone Settings → Sounds and vibration → System sound/vibration control → **Touch interactions** on, and the phone not on mute (8 Oct: it was off, so no buzz, as designed)* **10 Oct: still no buzz on the A51 even with the direct Vibrator API; Samsung drops it. Known limitation, skipped.**
 - [x] **P39** *(8 Oct: 109.5 kg → dot on chart, target 2,428 → 2,420, Today updated)* History → **Weight** card → **Log weight** → e.g. 79.5 → Save → chart dot, and "Daily target updated" if your target changed; Today shows the new target
 - [x] **P40** *(8 Oct: 400 → "Weight: 30 to 300"; fixed: first Save tap only closed the keyboard)* Log a weight 30 or 400 → "Weight: 30 to 300"
-- [ ] **P41** *(8 Oct: NutriScan connected and reading; Samsung Health allowed at 23:20 but had not synced its steps into Health Connect yet, recheck 9 Oct)* Today → **Steps** card: before S10 it says "Get Health Connect"; after S10, **Connect steps** → Health Connect permission screen → Allow → today's steps from Samsung Health and "About N kcal burned walking"
+- [ ] **P41** *(10 Oct: Health Connect stayed empty, so Samsung Health never shared its steps. NutriScan now also reads the phone's own step sensor (see P47))* Today → **Steps** card: before S10 it says "Get Health Connect"; after S10, **Connect steps** → Health Connect permission screen → Allow → today's steps from Samsung Health and "About N kcal burned walking"
 - [x] **P42** *(8 Oct: FR and Kreol fine; fixed: numbers now 2 420 / 0,4 in French, cut-off labels, "Série de 1 jours", "au En-cas")* Settings → **Language** → Français → every screen in French (Today, Add food, scanner, History, Settings, alerts); Kreol Morisien the same; back to English
 - [ ] **P43** Reopen the app → the language you chose is kept; the consent screen appears once (policy updated 8 Oct)
 
 ### Look and feel
 - [ ] **P29** Nothing is cut off or overlapping on any screen (A51 screen, One UI font size); text under the clock never overlaps when scrolling
 - [ ] **P30** Phone Settings → Display → Font size at the largest → NutriScan screens still readable, buttons not cut off
+
+### Added 10 Oct
+- [x] **P44** Settings → **Help and FAQ** → 12 questions; tap one → its answer opens (one at a time) *(10 Oct)*
+- [x] **P45** Settings → **Delete my account and data** → a password form opens; empty → "Required"; wrong password → "Wrong password"; right password → account deleted *(10 Oct: "Required" and the real delete checked; "Wrong password" not seen yet)*
+- [x] **P46** Open NutriScan → Recents button → NutriScan's card is blank grey, no diary visible *(10 Oct)*
+- [ ] **P47** Today → Steps → **Count my steps** → allow Physical activity → "0 · counted by this phone since HH:MM"; walk 30 steps → History → Today → the number goes up *(10 Oct: allowed and reading; the walk still to check)*
+- [x] **P48** No internet, more than 1 hour after last use → open NutriScan → your diary opens in a few seconds (not the Login screen); "Agree" offline → "Could not save… check your connection" *(10 Oct, after the fix)*
+- [x] **P49** Biggest text (Settings → Display → Font size, max) → nothing cut off; tab labels fully visible *(10 Oct: tab labels were clipped; fixed and rechecked in light mode)*

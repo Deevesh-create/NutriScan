@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { DarkTheme, DefaultTheme, type InitialState, NavigationContainer, type Theme } from '@react-navigation/native';
 import { createNativeStackNavigator, type NativeStackNavigationOptions } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -135,6 +135,7 @@ const tabIcon =
 
 function Tabs() {
   const insets = useSafeAreaInsets();
+  const { fontScale } = useWindowDimensions();
   return (
     <Tab.Navigator
       screenOptions={{
@@ -142,7 +143,8 @@ function Tabs() {
         tabBarActiveTintColor: colors.basil,
         tabBarInactiveTintColor: colors.muted,
         tabBarLabelStyle: { fontFamily: fonts.bold, fontSize: 12 },
-        tabBarStyle: { borderTopColor: colors.line },
+        // The default bar is a fixed 49 dp tall: grow it with the phone's text size so labels aren't clipped.
+        tabBarStyle: { borderTopColor: colors.line, height: 49 + insets.bottom + Math.ceil(20 * Math.max(0, fontScale - 1)) },
         // Screens start below the status bar, so scrolled content never slides under the clock.
         sceneStyle: { paddingTop: insets.top, backgroundColor: colors.bg },
       }}
