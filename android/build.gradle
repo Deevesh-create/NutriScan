@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        buildToolsVersion = "37.0.0"
+        minSdkVersion = 26 // Android 8.0: needed by Health Connect (react-native-health-connect)
+        compileSdkVersion = 37
+        targetSdkVersion = 36
+        ndkVersion = "27.1.12297006"
+        kotlinVersion = "2.2.0"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
+
+// Windows caps CMake object paths at 250 characters and long paths are off by default. Libraries that
+// build C++ from node_modules (the barcode scanner went over) get a short build folder instead.
+// ponytail: only needed on Windows without LongPathsEnabled; harmless elsewhere.
+subprojects {
+    plugins.withId("com.android.library") {
+        android.externalNativeBuild.cmake.buildStagingDirectory =
+            rootProject.file("../.cxx/${project.name.replace('react-native-', '')}")
+    }
+}

@@ -1,0 +1,44 @@
+NutriScan Terms of Use
+======================
+
+Last updated 10 October 2026 (version 2026-10-10)
+
+About NutriScan
+---------------
+NutriScan is a free student project. By creating an account you agree to these terms. We may change or stop the app at any time.
+
+Not medical advice
+------------------
+Calorie targets are estimates worked out with the Mifflin-St Jeor equation, and NutriScan never sets a target below 1,200 kcal a day for women or 1,500 kcal for men. They are not medical advice.
+
+Talk to a doctor before dieting if you are pregnant or breastfeeding, under 18, have a medical condition, or have ever had an eating disorder.
+
+Food information can be wrong
+-----------------------------
+Food data comes from Open Food Facts (available under the Open Database Licence), USDA FoodData Central (public domain) and NutriScan users. Meal photos are recognised by an AI model, and labels are read automatically. Any of these can be wrong: check the numbers against the pack when it matters.
+
+Your account
+------------
+Use your own email, keep your password safe, and do not share your account. You are responsible for what is done with it.
+
+Products you share
+------------------
+When you add a product that no database knows, it is shared with all NutriScan users. Copy the label honestly, and do not add misleading or offensive text. We may remove any shared product.
+
+Fair use
+--------
+Do not try to access other users' data, attack or overload the service, or copy the food databases through the app.
+
+Ending your account
+-------------------
+You can delete your account at any time in Settings. We may suspend accounts that break these terms.
+
+No guarantee
+------------
+NutriScan is provided "as is", without any guarantee that it is accurate or always available. As far as the law allows, we are not responsible for decisions you make based on its estimates.
+
+Law and contact
+---------------
+These terms are governed by the laws of Mauritius. Questions: deeveshrughoo24@gmail.com.
+
+Contact: deeveshrughoo24@gmail.com

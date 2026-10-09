@@ -1,0 +1,31 @@
+diff --git a/node_modules/react-native-fast-tflite/android/src/main/java/com/margelo/nitro/tflite/HybridAssetLoader.kt b/node_modules/react-native-fast-tflite/android/src/main/java/com/margelo/nitro/tflite/HybridAssetLoader.kt
+index c2360f5..cc4f621 100644
+--- a/node_modules/react-native-fast-tflite/android/src/main/java/com/margelo/nitro/tflite/HybridAssetLoader.kt
++++ b/node_modules/react-native-fast-tflite/android/src/main/java/com/margelo/nitro/tflite/HybridAssetLoader.kt
+@@ -2,6 +2,7 @@ package com.margelo.nitro.tflite
+ 
+ import androidx.annotation.Keep
+ import com.facebook.proguard.annotations.DoNotStrip
++import com.margelo.nitro.NitroModules
+ import com.margelo.nitro.core.ArrayBuffer
+ import com.margelo.nitro.core.Promise
+ import java.net.URL
+@@ -11,8 +12,17 @@ import java.net.URL
+ class HybridAssetLoader : HybridAssetLoaderSpec() {
+   override fun loadAsset(path: String): Promise<ArrayBuffer> {
+     return Promise.async {
+-      val bytes = URL(path).readBytes()
++      // NutriScan patch: release builds bundle require()d models into res/raw, and React Native
++      // resolves them to a bare resource name ("assets_models_food_v1") that java.net.URL can't open.
++      val bytes = if (path.contains("://")) URL(path).readBytes() else readRawResource(path)
+       return@async ArrayBuffer.copy(bytes)
+     }
+   }
++
++  private fun readRawResource(name: String): ByteArray {
++    val context = NitroModules.applicationContext ?: throw Error("TFLite: React context is not ready yet")
++    val id = context.resources.getIdentifier(name, "raw", context.packageName)
++    if (id == 0) throw Error("TFLite: model '$name' not found in res/raw")
++    return context.resources.openRawResource(id).use { it.readBytes() }
++  }
+ }
