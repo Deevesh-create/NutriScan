@@ -1,142 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#15201A"/></marker></defs>
-<rect width="1280" height="900" fill="#FFFFFF"/>
-<text x="30" y="46" font-size="26" font-weight="800" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">NutriScan: system architecture</text>
-<text x="1250" y="46" font-size="14" font-weight="bold" fill="#1C7247" text-anchor="end" font-family="Archivo, 'Segoe UI', Arial, sans-serif">React Native · Android</text>
-<rect x="30" y="58" width="1220" height="5" fill="#15201A"/>
-<rect x="30" y="84" width="830" height="760" rx="22" fill="#F4F6F1" stroke="#15201A" stroke-width="2"/>
-<text x="54" y="116" font-size="18" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Android phone</text>
-<text x="54" y="138" font-size="13" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">NutriScan app: React Native 0.87, TypeScript, Hermes engine</text>
-<rect x="50" y="156" width="790" height="150" rx="14" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="66" y="180" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">1  Screens &amp; navigation</text>
-<rect x="66" y="192" width="53" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="92.5" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Login</text>
-<rect x="124" y="192" width="74" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="161.0" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Register</text>
-<rect x="203" y="192" width="53" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="229.5" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Setup</text>
-<rect x="261" y="192" width="53" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="287.5" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Today</text>
-<rect x="319" y="192" width="67" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="352.5" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">History</text>
-<rect x="391" y="192" width="74" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="428.0" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Settings</text>
-<rect x="470" y="192" width="67" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="503.5" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">AddFood</text>
-<rect x="542" y="192" width="53" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="568.5" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Goals</text>
-<rect x="600" y="192" width="46" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="623.0" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Scan</text>
-<rect x="651" y="192" width="46" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="674.0" y="211" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Snap</text>
-<rect x="66" y="236" width="373" height="58" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="78" y="258" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">React Navigation</text>
-<text x="78" y="277" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">stack + tabs; signed-out users only see Login</text>
-<rect x="451" y="236" width="373" height="58" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="463" y="258" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Design system</text>
-<text x="463" y="277" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">colours, fonts, Button, Field, Chips, ProgressRing</text>
-<rect x="50" y="318" width="790" height="98" rx="14" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="66" y="342" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">2  App state</text>
-<rect x="66" y="354" width="244" height="52" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="78" y="376" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">AuthContext</text>
-<text x="78" y="395" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">login session, goal, app lock</text>
-<rect x="322" y="354" width="244" height="52" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="334" y="376" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">useProgress</text>
-<text x="334" y="395" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">points, streaks, badges</text>
-<rect x="578" y="354" width="246" height="52" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="590" y="376" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">ErrorBoundary</text>
-<text x="590" y="395" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">"Try again" screen, no crash</text>
-<rect x="50" y="428" width="790" height="150" rx="14" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="66" y="452" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">3  Logic &amp; services (TypeScript)</text>
-<rect x="66" y="462" width="373" height="104" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="78" y="482" font-size="12" font-weight="bold" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Pure logic, unit-tested (npm run check)</text>
-<rect x="78" y="494" width="95" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="125.5" y="513" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">calories.ts</text>
-<rect x="179" y="494" width="95" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="226.5" y="513" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">progress.ts</text>
-<rect x="280" y="494" width="74" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="317.0" y="513" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">foods.ts</text>
-<rect x="78" y="528" width="102" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="129.0" y="547" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">mauritian.ts</text>
-<rect x="186" y="528" width="95" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="233.5" y="547" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">classify.ts</text>
-<rect x="451" y="462" width="373" height="104" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="463" y="482" font-size="12" font-weight="bold" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Services: talk to the cloud and the phone</text>
-<rect x="463" y="494" width="95" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="510.5" y="513" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">supabase.ts</text>
-<rect x="564" y="494" width="109" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="618.5" y="513" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">foodSearch.ts</text>
-<rect x="679" y="494" width="130" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="744.0" y="513" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">openFoodFacts.ts</text>
-<rect x="463" y="528" width="137" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="531.5" y="547" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">foodRecognizer.ts</text>
-<rect x="606" y="528" width="102" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="657.0" y="547" font-size="12" font-weight="normal" fill="#15201A" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">reminders.ts</text>
-<rect x="50" y="590" width="790" height="242" rx="14" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="66" y="614" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">4  Native modules → phone hardware</text>
-<rect x="66" y="628" width="180" height="78" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="78" y="650" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">VisionCamera v5</text>
-<text x="78" y="669" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">+ ML Kit barcode scanner</text>
-<text x="78" y="686" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">EAN-13/8, UPC-A/E</text>
-<line x1="156" y1="706" x2="156" y2="738" stroke="#15201A" stroke-width="1.5" marker-end="url(#a)"/>
-<rect x="66" y="740" width="180" height="76" rx="10" fill="#1C7247" stroke="#1C7247" stroke-width="1"/>
-<text x="78" y="762" font-size="13.5" font-weight="bold" fill="#FFFFFF" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Camera</text>
-<text x="78" y="781" font-size="12" font-weight="normal" fill="#E1F0E6" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">barcodes + meal photos</text>
-<rect x="258" y="628" width="180" height="78" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="270" y="650" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">fast-tflite</text>
-<text x="270" y="669" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">food_V1 model</text>
-<text x="270" y="686" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">2,023 dishes, offline</text>
-<line x1="348" y1="706" x2="348" y2="738" stroke="#15201A" stroke-width="1.5" marker-end="url(#a)"/>
-<rect x="258" y="740" width="180" height="76" rx="10" fill="#1C7247" stroke="#1C7247" stroke-width="1"/>
-<text x="270" y="762" font-size="13.5" font-weight="bold" fill="#FFFFFF" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Phone CPU</text>
-<text x="270" y="781" font-size="12" font-weight="normal" fill="#E1F0E6" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">on-device AI</text>
-<rect x="450" y="628" width="180" height="78" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="462" y="650" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">notify-kit</text>
-<text x="462" y="669" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">3 daily reminders</text>
-<text x="462" y="686" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">8:30, 13:00, 19:30</text>
-<line x1="540" y1="706" x2="540" y2="738" stroke="#15201A" stroke-width="1.5" marker-end="url(#a)"/>
-<rect x="450" y="740" width="180" height="76" rx="10" fill="#1C7247" stroke="#1C7247" stroke-width="1"/>
-<text x="462" y="762" font-size="13.5" font-weight="bold" fill="#FFFFFF" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Notifications</text>
-<text x="462" y="781" font-size="12" font-weight="normal" fill="#E1F0E6" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">asks permission first</text>
-<rect x="642" y="628" width="180" height="78" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="654" y="650" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">react-native-keychain</text>
-<text x="654" y="669" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">fingerprint app lock</text>
-<text x="654" y="686" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">encrypted login session</text>
-<line x1="732" y1="706" x2="732" y2="738" stroke="#15201A" stroke-width="1.5" marker-end="url(#a)"/>
-<rect x="642" y="740" width="180" height="76" rx="10" fill="#1C7247" stroke="#1C7247" stroke-width="1"/>
-<text x="654" y="762" font-size="13.5" font-weight="bold" fill="#FFFFFF" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Keystore + sensor</text>
-<text x="654" y="781" font-size="12" font-weight="normal" fill="#E1F0E6" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">hardware-backed keys</text>
-<rect x="890" y="84" width="360" height="760" rx="22" fill="#FFFFFF" stroke="#15201A" stroke-width="2" stroke-dasharray="8 6"/>
-<text x="914" y="116" font-size="18" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Cloud services</text>
-<text x="914" y="138" font-size="13" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">every call goes over HTTPS</text>
-<rect x="910" y="156" width="320" height="316" rx="10" fill="#E1F0E6" stroke="#1C7247" stroke-width="2"/>
-<text x="926" y="184" font-size="16" font-weight="bold" fill="#1C7247" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Supabase</text>
-<text x="926" y="208" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Auth: sign-up / sign-in with email,</text>
-<text x="926" y="225" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">JWT access + refresh tokens</text>
-<text x="926" y="254" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Postgres database</text>
-<rect x="926" y="266" width="190" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="938" y="285" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Consolas, 'Courier New', monospace">nutrition_goals</text>
-<rect x="926" y="302" width="190" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="938" y="321" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Consolas, 'Courier New', monospace">food_entries</text>
-<rect x="926" y="338" width="190" height="28" rx="6" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="938" y="357" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Consolas, 'Courier New', monospace">mauritian_foods</text>
-<text x="926" y="398" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Row Level Security: each user can</text>
-<text x="926" y="415" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">only read and write their own rows.</text>
-<text x="926" y="438" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">CHECK rules reject impossible values.</text>
-<rect x="910" y="492" width="320" height="150" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="922" y="514" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Open Food Facts</text>
-<text x="922" y="533" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">barcode → name, kcal, macros,</text>
-<text x="922" y="550" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">serving size and photo</text>
-<text x="922" y="567" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">text search for dishes</text>
-<text x="922" y="584" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">free and open, no key needed</text>
-<rect x="910" y="662" width="320" height="154" rx="10" fill="#FFFFFF" stroke="#DDE3DA" stroke-width="1"/>
-<text x="922" y="684" font-size="13.5" font-weight="bold" fill="#15201A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">USDA FoodData Central</text>
-<text x="922" y="703" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">generic foods with servings</text>
-<text x="922" y="720" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">branded-food barcode fallback</text>
-<text x="922" y="737" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">needs a free API key</text>
-<text x="922" y="754" font-size="12" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">(kept out of the code repository)</text>
-<line x1="826" y1="500" x2="906" y2="300" stroke="#15201A" stroke-width="1.5" marker-end="url(#a)"/>
-<line x1="826" y1="526" x2="906" y2="560" stroke="#15201A" stroke-width="1.5" marker-end="url(#a)"/>
-<line x1="826" y1="552" x2="906" y2="730" stroke="#15201A" stroke-width="1.5" marker-end="url(#a)"/>
-<text x="30" y="878" font-size="13" font-weight="normal" fill="#56635A" text-anchor="start" font-family="Archivo, 'Segoe UI', Arial, sans-serif">Arrows from Services = HTTPS requests. Photos, the AI model and fingerprints never leave the phone.</text>
+<rect width="1400" height="900" fill="#FFFFFF"/>
+<text x="30" y="44" font-size="26" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">NutriScan: system architecture</text>
+<text x="1370" y="44" font-size="14" font-weight="bold" fill="#1C7247" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif">Phone ↔ app ↔ cloud</text>
+<rect x="30" y="80" width="270" height="790" rx="10" fill="#FBF0DA" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="44" y="104" font-size="15" font-weight="bold" fill="#8A5A00" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Phone hardware &amp; Android</text>
+<rect x="46" y="120" width="238" height="76" rx="10" fill="#FFFFFF" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="60" y="144" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Camera + flash</text>
+<text x="60" y="166" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  barcodes, labels, meals</text>
+<rect x="46" y="224" width="238" height="76" rx="10" fill="#FFFFFF" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="60" y="248" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Fingerprint sensor</text>
+<text x="60" y="270" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  app lock (BiometricPrompt)</text>
+<rect x="46" y="328" width="238" height="76" rx="10" fill="#FFFFFF" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="60" y="352" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Step counter sensor</text>
+<text x="60" y="374" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  TYPE_STEP_COUNTER</text>
+<rect x="46" y="432" width="238" height="76" rx="10" fill="#FFFFFF" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="60" y="456" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Health Connect</text>
+<text x="60" y="478" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  Samsung Health steps</text>
+<rect x="46" y="536" width="238" height="76" rx="10" fill="#FFFFFF" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="60" y="560" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Notifications + alarms</text>
+<text x="60" y="582" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  meal reminders (exact)</text>
+<rect x="46" y="640" width="238" height="76" rx="10" fill="#FFFFFF" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="60" y="664" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Android Keystore</text>
+<text x="60" y="686" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  AES key for the session</text>
+<rect x="46" y="744" width="238" height="76" rx="10" fill="#FFFFFF" stroke="#E2C58A" stroke-width="1.5"/>
+<text x="60" y="768" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Vibration motor</text>
+<text x="60" y="790" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  haptics</text>
+<rect x="340" y="80" width="600" height="790" rx="10" fill="#E3F1E8" stroke="#9CCBAE" stroke-width="1.5"/>
+<text x="354" y="104" font-size="15" font-weight="bold" fill="#1C7247" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">NutriScan app: React Native 0.87 · TypeScript · Hermes</text>
+<rect x="356" y="120" width="568" height="120" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="370" y="144" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Screens (React Navigation 7)</text>
+<text x="370" y="166" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Login · Register · Consent · Setup · Today · History · Settings</text>
+<text x="370" y="185" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Add food · Scanner (Meal | Barcode | Label) · Goals · FAQ · Legal</text>
+<text x="370" y="204" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  Lock screen over everything when the fingerprint lock is on</text>
+<rect x="356" y="256" width="568" height="82" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="370" y="280" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">State (React context)</text>
+<text x="370" y="302" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">AuthContext: session, goal, lock   ·   LanguageContext: EN / FR / Kreol</text>
+<rect x="356" y="354" width="568" height="158" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="370" y="378" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Logic (src/lib)</text>
+<text x="370" y="400" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">calories: Mifflin-St Jeor target, macros, steps kcal</text>
+<text x="370" y="419" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">foodSearch: Open Food Facts + USDA + Mauritian + shared foods</text>
+<text x="370" y="438" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">nutritionLabel: parses ML Kit text into kcal / macros</text>
+<text x="370" y="457" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">offline: cached diary + queue of foods to send later</text>
+<text x="370" y="476" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">validation (zod) · i18n · progress (streaks, badges)</text>
+<rect x="356" y="528" width="568" height="158" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="370" y="552" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Native modules &amp; libraries</text>
+<text x="370" y="574" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">VisionCamera 5 + ML Kit barcode scanner</text>
+<text x="370" y="593" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">TensorFlow Lite meal model (on the phone)</text>
+<text x="370" y="612" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Kotlin: LabelReader (ML Kit OCR), StepCounter, Haptics</text>
+<text x="370" y="631" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">notify-kit (reminders) · keychain (Keystore, biometrics)</text>
+<text x="370" y="650" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">react-native-health-connect</text>
+<rect x="356" y="702" width="568" height="150" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="370" y="726" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Stored on the phone</text>
+<text x="370" y="748" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Login session: encrypted (AES-GCM, key in Keystore)</text>
+<text x="370" y="767" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">AsyncStorage: offline diary, goal, weights, water</text>
+<text x="370" y="786" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  foods waiting to sync, steps per day, language</text>
+<text x="370" y="805" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Nothing in backups (allowBackup=false); Recents hidden</text>
+<rect x="980" y="80" width="390" height="520" rx="10" fill="#E5ECF8" stroke="#A9BEE3" stroke-width="1.5"/>
+<text x="994" y="104" font-size="15" font-weight="bold" fill="#2453A6" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Supabase (cloud backend)</text>
+<rect x="996" y="120" width="358" height="82" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="1010" y="144" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Auth</text>
+<text x="1010" y="166" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">email + password, email confirmation</text>
+<text x="1010" y="185" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">JWT access + refresh tokens</text>
+<rect x="996" y="218" width="358" height="200" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="1010" y="242" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Postgres, Row Level Security</text>
+<text x="1010" y="264" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">nutrition_goals · food_entries</text>
+<text x="1010" y="283" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">weight_log · water_intake</text>
+<text x="1010" y="302" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">community_foods (shared products)</text>
+<text x="1010" y="321" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">mauritian_foods (read-only)</text>
+<text x="1010" y="340" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">RPC delete_my_account()</text>
+<text x="1010" y="359" font-size="13" font-weight="normal" fill="#5A6B60" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">  each user reads/writes only own rows</text>
+<rect x="996" y="434" width="358" height="76" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="1010" y="458" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Edge Function: usda-search</text>
+<text x="1010" y="480" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">holds the USDA key; checks the JWT</text>
+<rect x="996" y="526" width="358" height="60" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="1010" y="550" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Storage: legal</text>
+<text x="1010" y="572" font-size="12" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">privacy policy, terms (public)</text>
+<rect x="980" y="640" width="390" height="230" rx="10" fill="#F5F8F5" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="994" y="664" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">External food databases</text>
+<rect x="996" y="680" width="358" height="76" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="1010" y="704" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">Open Food Facts</text>
+<text x="1010" y="726" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">barcode lookup, product search</text>
+<rect x="996" y="772" width="358" height="76" rx="10" fill="#FFFFFF" stroke="#C9D4CC" stroke-width="1.5"/>
+<text x="1010" y="796" font-size="15" font-weight="bold" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">USDA FoodData Central</text>
+<text x="1010" y="818" font-size="13" font-weight="normal" fill="#15201A" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">reached only through the Edge Function</text>
+<line x1="284" y1="158" x2="340" y2="158" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="284" y1="262" x2="340" y2="262" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="284" y1="366" x2="340" y2="366" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="284" y1="470" x2="340" y2="470" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="284" y1="574" x2="340" y2="574" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="284" y1="678" x2="340" y2="678" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="284" y1="782" x2="340" y2="782" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="940" y1="160" x2="996" y2="160" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="968" y="150" font-size="12" font-weight="bold" fill="#1C7247" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif">HTTPS</text>
+<line x1="940" y1="300" x2="996" y2="300" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="968" y="290" font-size="12" font-weight="bold" fill="#1C7247" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif">JWT</text>
+<line x1="940" y1="472" x2="996" y2="472" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="940" y1="718" x2="996" y2="718" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="968" y="708" font-size="12" font-weight="bold" fill="#1C7247" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif">HTTPS</text>
+<path d="M1354 472 H1385 V810 H1354" fill="none" stroke="#15201A" stroke-width="1.8" marker-end="url(#a)"/>
+<text transform="rotate(90 1389 645)" x="1389" y="645" font-size="12" font-weight="bold" fill="#1C7247" text-anchor="start" font-family="'Segoe UI', Arial, sans-serif">API key</text>
 </svg>
