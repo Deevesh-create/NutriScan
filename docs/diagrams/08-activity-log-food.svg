@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1160" viewBox="0 0 1100 1160">
+<defs>
+<marker id="f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#000000"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#000000" stroke-width="1.3"/></marker>
+<marker id="g" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="13" markerHeight="13" orient="auto-start-reverse"><path d="M0 0L12 6L0 12z" fill="#fff" stroke="#000000" stroke-width="1"/></marker>
+</defs>
+<rect width="1100" height="1160" fill="#fff"/>
+<rect x="6" y="6" width="1088" height="1148" fill="none" stroke="#000000" stroke-width="1"/>
+<path d="M6 6 H120.8 V22 L110.8 32 H6 Z" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="14.0" y="24.0" font-size="13" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">act Log a food</text>
+<circle cx="550" cy="60" r="11" fill="#000000"/>
+<line x1="550" y1="71" x2="550" y2="96" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="435.0" y="99.5" width="230" height="37" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="550.0" y="123.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Open Add food or Scan food</text>
+<line x1="550" y1="140" x2="550" y2="168" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<path d="M550 168 L568 186 L550 204 L532 186 Z" fill="#fff" stroke="#000000"/>
+<text x="575.0" y="182.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">how?</text>
+<path d="M532 186 H150 V236" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="50.0" y="239.5" width="200" height="37" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="150.0" y="263.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Search by name</text>
+<path d="M532 186 H400 V236" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="300.0" y="239.5" width="200" height="37" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="400.0" y="263.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Scan barcode</text>
+<path d="M568 186 H700 V236" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="600.0" y="239.5" width="200" height="37" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="700.0" y="263.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Scan nutrition label</text>
+<path d="M568 186 H950 V236" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="850.0" y="239.5" width="200" height="37" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="950.0" y="263.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Photograph meal</text>
+<text x="140.0" y="230.0" font-size="11" font-weight="normal" text-anchor="end" fill="#555555" font-family="Arial, Helvetica, sans-serif">[search]</text>
+<text x="392.0" y="230.0" font-size="11" font-weight="normal" text-anchor="end" fill="#555555" font-family="Arial, Helvetica, sans-serif">[barcode]</text>
+<text x="708.0" y="230.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[label]</text>
+<text x="958.0" y="230.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[photo]</text>
+<rect x="50.0" y="306.5" width="200" height="67" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="150.0" y="330.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Pick a result</text>
+<text x="150.0" y="345.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">(USDA, Open Food Facts,</text>
+<text x="150.0" y="360.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Mauritian, shared)</text>
+<line x1="150" y1="280" x2="150" y2="312" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="400" y1="280" x2="400" y2="318" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<path d="M400 318 L418 336 L400 354 L382 336 Z" fill="#fff" stroke="#000000"/>
+<text x="424.0" y="332.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">found?</text>
+<rect x="600.0" y="314.0" width="200" height="52" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="700.0" y="337.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">ML Kit reads the text;</text>
+<text x="700.0" y="352.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">parser fills the panel</text>
+<line x1="700" y1="280" x2="700" y2="318" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="418" y1="336" x2="598" y2="336" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="508.0" y="328.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">[no]</text>
+<rect x="850.0" y="314.0" width="200" height="52" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="950.0" y="337.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">TFLite suggests top 3;</text>
+<text x="950.0" y="352.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">member picks one</text>
+<line x1="950" y1="280" x2="950" y2="318" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<path d="M550 432 L568 450 L550 468 L532 450 Z" fill="#fff" stroke="#000000"/>
+<path d="M150 370 V450 H530" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<path d="M400 354 V412 H550 V430" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="410.0" y="400.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[yes]</text>
+<path d="M700 370 V450 H568" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<path d="M950 370 V450 H570" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="550" y1="468" x2="550" y2="500" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="435.0" y="498.0" width="230" height="52" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="550.0" y="521.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Add food form filled:</text>
+<text x="550.0" y="536.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">name, kcal/100 g, grams, macros, meal</text>
+<line x1="550" y1="552" x2="550" y2="580" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="435.0" y="581.5" width="230" height="37" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="550.0" y="605.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Member checks values, taps Add to diary</text>
+<line x1="550" y1="620" x2="550" y2="650" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<path d="M550 650 L568 668 L550 686 L532 668 Z" fill="#fff" stroke="#000000"/>
+<text x="575.0" y="664.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">valid? (zod)</text>
+<rect x="760.0" y="642.0" width="200" height="52" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="860.0" y="665.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Show field errors,</text>
+<text x="860.0" y="680.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">&quot;reject&quot; buzz</text>
+<line x1="568" y1="668" x2="758" y2="668" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="660.0" y="660.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">[no]</text>
+<path d="M860 642 V600 H667" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="550" y1="686" x2="550" y2="716" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="560.0" y="706.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[yes]</text>
+<path d="M550 716 L568 734 L550 752 L532 734 Z" fill="#fff" stroke="#000000"/>
+<text x="575.0" y="730.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">online?</text>
+<rect x="190.0" y="774.0" width="220" height="52" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="797.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Insert into food_entries</text>
+<text x="300.0" y="812.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">(RLS checks the owner)</text>
+<rect x="690.0" y="774.0" width="220" height="52" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="800.0" y="797.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Save in the queue on the</text>
+<text x="800.0" y="812.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">phone (&quot;waiting to sync&quot;)</text>
+<path d="M532 734 H300 V778" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="420.0" y="726.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">[yes]</text>
+<path d="M568 734 H800 V778" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="680.0" y="726.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">[no]</text>
+<path d="M300 862 L318 880 L300 898 L282 880 Z" fill="#fff" stroke="#000000"/>
+<line x1="300" y1="822" x2="300" y2="862" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="324.0" y="876.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">was the barcode missing?</text>
+<rect x="200.0" y="934.0" width="200" height="52" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="300.0" y="957.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Share product in</text>
+<text x="300.0" y="972.5" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">community_foods</text>
+<line x1="300" y1="898" x2="300" y2="938" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="310.0" y="922.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[yes]</text>
+<path d="M550 1022 L568 1040 L550 1058 L532 1040 Z" fill="#fff" stroke="#000000"/>
+<path d="M300 982 V1040 H532" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<path d="M282 880 H200 V1040 H300" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="196.0" y="960.0" font-size="11" font-weight="normal" text-anchor="end" fill="#555555" font-family="Arial, Helvetica, sans-serif">[no]</text>
+<path d="M800 822 V1040 H568" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="808.0" y="930.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">sent on the next</text>
+<text x="808.0" y="946.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">Today refresh online</text>
+<line x1="550" y1="1058" x2="550" y2="1082" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="420.0" y="1081.5" width="260" height="37" rx="14" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="550.0" y="1105.0" font-size="12" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Today: totals, ring, badges update</text>
+<line x1="550" y1="1118" x2="550" y2="1128" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<circle cx="550" cy="1140" r="11" fill="#fff" stroke="#000000" stroke-width="1.5"/><circle cx="550" cy="1140" r="6" fill="#000000"/>
+</svg>

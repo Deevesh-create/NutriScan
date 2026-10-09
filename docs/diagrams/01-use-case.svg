@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1010" viewBox="0 0 1400 1010">
+<defs>
+<marker id="f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#000000"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#000000" stroke-width="1.3"/></marker>
+<marker id="g" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="13" markerHeight="13" orient="auto-start-reverse"><path d="M0 0L12 6L0 12z" fill="#fff" stroke="#000000" stroke-width="1"/></marker>
+</defs>
+<rect width="1400" height="1010" fill="#fff"/>
+<rect x="6" y="6" width="1388" height="998" fill="none" stroke="#000000" stroke-width="1"/>
+<path d="M6 6 H106.4 V22 L96.4 32 H6 Z" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="14.0" y="24.0" font-size="13" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">uc NutriScan</text>
+<rect x="250" y="50" width="870" height="940" rx="0" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="685.0" y="74.0" font-size="15" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">NutriScan</text>
+<ellipse cx="470" cy="118" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="122.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Register account</text>
+<ellipse cx="470" cy="173" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="177.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Sign in</text>
+<ellipse cx="470" cy="228" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="225.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Read privacy policy</text>
+<text x="470.0" y="240.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">and terms</text>
+<ellipse cx="470" cy="283" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="280.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Give health-data</text>
+<text x="470.0" y="295.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">consent</text>
+<ellipse cx="470" cy="338" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="342.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Set calorie goal</text>
+<ellipse cx="470" cy="393" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="397.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Log food</text>
+<ellipse cx="470" cy="448" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="452.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Edit or remove a food</text>
+<ellipse cx="470" cy="503" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="507.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">View diary and history</text>
+<ellipse cx="470" cy="558" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="562.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Track water</text>
+<ellipse cx="470" cy="613" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="617.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Log weight</text>
+<ellipse cx="470" cy="668" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="672.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Count steps</text>
+<ellipse cx="470" cy="723" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="727.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Get meal reminders</text>
+<ellipse cx="470" cy="778" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="775.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Lock app with</text>
+<text x="470.0" y="790.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">fingerprint</text>
+<ellipse cx="470" cy="833" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="837.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Change language</text>
+<ellipse cx="470" cy="888" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="892.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Read help and FAQ</text>
+<ellipse cx="470" cy="943" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="470.0" y="947.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Delete account</text>
+<ellipse cx="900" cy="280" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="900.0" y="284.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Search food</text>
+<ellipse cx="900" cy="345" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="900.0" y="349.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Scan barcode</text>
+<ellipse cx="900" cy="415" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="900.0" y="412.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Share unknown</text>
+<text x="900.0" y="427.0" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">product</text>
+<ellipse cx="900" cy="485" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="900.0" y="489.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Scan nutrition label</text>
+<ellipse cx="900" cy="545" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="900.0" y="549.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Photograph meal</text>
+<ellipse cx="900" cy="619" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="900.0" y="623.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Update calorie target</text>
+<ellipse cx="900" cy="943" rx="118" ry="24" fill="#fff" stroke="#000000" stroke-width="1.1"/>
+<text x="900.0" y="947.5" font-size="13" font-weight="normal" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Re-enter password</text>
+<circle cx="110" cy="150" r="9" fill="#fff" stroke="#000000" stroke-width="1.2"/>
+<line x1="110" y1="159" x2="110" y2="184" stroke="#000000" stroke-width="1.2"/>
+<line x1="94" y1="168" x2="126" y2="168" stroke="#000000" stroke-width="1.2"/>
+<line x1="110" y1="184" x2="97" y2="202" stroke="#000000" stroke-width="1.2"/>
+<line x1="110" y1="184" x2="123" y2="202" stroke="#000000" stroke-width="1.2"/>
+<text x="110.0" y="220.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Visitor</text>
+<circle cx="110" cy="560" r="9" fill="#fff" stroke="#000000" stroke-width="1.2"/>
+<line x1="110" y1="569" x2="110" y2="594" stroke="#000000" stroke-width="1.2"/>
+<line x1="94" y1="578" x2="126" y2="578" stroke="#000000" stroke-width="1.2"/>
+<line x1="110" y1="594" x2="97" y2="612" stroke="#000000" stroke-width="1.2"/>
+<line x1="110" y1="594" x2="123" y2="612" stroke="#000000" stroke-width="1.2"/>
+<text x="110.0" y="630.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Member</text>
+<line x1="110" y1="556" x2="110" y2="238" stroke="#000000" stroke-width="1.1" marker-end="url(#g)"/>
+<line x1="128" y1="172" x2="352" y2="118" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="172" x2="352" y2="173" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="172" x2="352" y2="228" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="283" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="338" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="393" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="448" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="503" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="558" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="613" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="668" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="723" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="778" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="833" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="888" stroke="#000000" stroke-width="1.1"/>
+<line x1="128" y1="580" x2="352" y2="943" stroke="#000000" stroke-width="1.1"/>
+<line x1="782" y1="280" x2="588" y2="393" stroke="#000000" stroke-width="1.1" marker-end="url(#g)"/>
+<line x1="782" y1="345" x2="588" y2="393" stroke="#000000" stroke-width="1.1" marker-end="url(#g)"/>
+<line x1="782" y1="485" x2="588" y2="393" stroke="#000000" stroke-width="1.1" marker-end="url(#g)"/>
+<line x1="782" y1="545" x2="588" y2="393" stroke="#000000" stroke-width="1.1" marker-end="url(#g)"/>
+<line x1="900" y1="391" x2="900" y2="369" stroke="#000000" stroke-width="1.1" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<text x="908.0" y="384.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">«extend»  [barcode not found]</text>
+<line x1="588" y1="613" x2="782" y2="619" stroke="#000000" stroke-width="1.1" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<text x="685.0" y="609.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">«include»</text>
+<line x1="588" y1="943" x2="782" y2="943" stroke="#000000" stroke-width="1.1" stroke-dasharray="6 4" marker-end="url(#o)"/>
+<text x="685.0" y="937.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">«include»</text>
+<rect x="1170" y="240" width="190" height="62" rx="0" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1265.0" y="258.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">«system»</text>
+<text x="1265.0" y="276.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Open Food Facts</text>
+<rect x="1170" y="390" width="190" height="62" rx="0" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1265.0" y="408.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">«system»</text>
+<text x="1265.0" y="426.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">USDA FoodData</text>
+<text x="1265.0" y="441.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Central</text>
+<rect x="1170" y="710" width="190" height="62" rx="0" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1265.0" y="728.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">«system»</text>
+<text x="1265.0" y="746.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Android OS</text>
+<text x="1265.0" y="830.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">camera, step sensor,</text>
+<text x="1265.0" y="846.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">Health Connect, biometrics,</text>
+<text x="1265.0" y="862.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">notifications</text>
+<line x1="1018" y1="280" x2="1170" y2="270" stroke="#000000" stroke-width="1.1"/>
+<line x1="1018" y1="280" x2="1170" y2="420" stroke="#000000" stroke-width="1.1"/>
+<line x1="1018" y1="345" x2="1170" y2="270" stroke="#000000" stroke-width="1.1"/>
+<line x1="1018" y1="345" x2="1170" y2="420" stroke="#000000" stroke-width="1.1"/>
+<line x1="588" y1="668" x2="1170" y2="745" stroke="#000000" stroke-width="1.1"/>
+<line x1="588" y1="723" x2="1170" y2="745" stroke="#000000" stroke-width="1.1"/>
+<line x1="588" y1="778" x2="1170" y2="745" stroke="#000000" stroke-width="1.1"/>
+</svg>

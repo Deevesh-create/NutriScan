@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+<marker id="f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#000000"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#000000" stroke-width="1.3"/></marker>
+<marker id="g" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="13" markerHeight="13" orient="auto-start-reverse"><path d="M0 0L12 6L0 12z" fill="#fff" stroke="#000000" stroke-width="1"/></marker>
+</defs>
+<rect width="1400" height="900" fill="#fff"/>
+<rect x="6" y="6" width="1388" height="888" fill="none" stroke="#000000" stroke-width="1"/>
+<path d="M6 6 H200.0 V22 L190.0 32 H6 Z" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="14.0" y="24.0" font-size="13" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">stm NutriScan screen flow</text>
+<circle cx="180" cy="80" r="10" fill="#000000"/>
+<text x="198.0" y="85.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">app opens</text>
+<rect x="30" y="130" width="300" height="720" rx="0" fill="#F7F7F7" stroke="#000000" stroke-width="1"/>
+<text x="42.0" y="150.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">only screens for the current state exist</text>
+<rect x="60" y="170" width="240" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="180.0" y="193.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Login</text>
+<text x="180.0" y="212.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">no session</text>
+<rect x="60" y="270" width="240" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="180.0" y="293.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Register</text>
+<text x="180.0" y="312.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">consent boxes, email check</text>
+<rect x="60" y="400" width="240" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="180.0" y="423.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Consent</text>
+<text x="180.0" y="442.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">new or changed policy</text>
+<rect x="60" y="530" width="240" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="180.0" y="553.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Setup</text>
+<text x="180.0" y="572.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">no goal yet</text>
+<rect x="60" y="700" width="240" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="180.0" y="723.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Legal</text>
+<text x="180.0" y="742.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">policy / terms (from any of these)</text>
+<line x1="180" y1="90" x2="180" y2="168" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="180" y1="226" x2="180" y2="268" stroke="#000000" stroke-width="1.1" marker-end="url(#f)" marker-start="url(#f)"/>
+<line x1="180" y1="326" x2="180" y2="398" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="188.0" y="368.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[signed in]</text>
+<line x1="180" y1="456" x2="180" y2="528" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="188.0" y="498.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[agreed]</text>
+<path d="M300 558 H355 V160 H378" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="362.0" y="400.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">[goal saved]</text>
+<rect x="380" y="70" width="990" height="150" rx="0" fill="#F7F7F7" stroke="#000000" stroke-width="1"/>
+<text x="392.0" y="90.0" font-size="12" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">bottom tabs</text>
+<rect x="410" y="110" width="290" height="64" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="555.0" y="133.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Today</text>
+<text x="555.0" y="152.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">ring, macros, water, steps, meals</text>
+<rect x="730" y="110" width="290" height="64" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="875.0" y="133.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">History</text>
+<text x="875.0" y="152.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">weight, 7 days, deficit, badges</text>
+<rect x="1050" y="110" width="290" height="64" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1195.0" y="133.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Settings</text>
+<text x="1195.0" y="152.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">goal, reminders, lock, language</text>
+<path d="M875 174 V196 H640 V176" fill="none" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="760.0" y="192.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">tap a day</text>
+<rect x="480" y="320" width="290" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="625.0" y="343.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Add food</text>
+<text x="625.0" y="362.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">search, recent ＋, type, edit</text>
+<rect x="380" y="460" width="650" height="170" rx="0" fill="#F7F7F7" stroke="#000000" stroke-width="1"/>
+<text x="392.0" y="480.0" font-size="12" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Scanner (full screen)</text>
+<rect x="400" y="505" width="190" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="495.0" y="528.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Meal</text>
+<text x="495.0" y="547.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">photo, AI top 3</text>
+<rect x="610" y="505" width="190" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="705.0" y="528.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Barcode</text>
+<text x="705.0" y="547.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">or type the number</text>
+<rect x="820" y="505" width="190" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="915.0" y="528.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Label</text>
+<text x="915.0" y="547.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">live nutrition panel</text>
+<text x="705.0" y="604.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">tabs switch between the three modes</text>
+<line x1="430" y1="174" x2="430" y2="458" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="424.0" y="300.0" font-size="11" font-weight="normal" text-anchor="end" fill="#555555" font-family="Arial, Helvetica, sans-serif">Scan food</text>
+<line x1="560" y1="174" x2="560" y2="318" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="568.0" y="270.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">＋ / Search food / tap a food</text>
+<line x1="690" y1="460" x2="690" y2="378" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="682.0" y="430.0" font-size="11" font-weight="normal" text-anchor="end" fill="#555555" font-family="Arial, Helvetica, sans-serif">Use this / Use these values</text>
+<line x1="770" y1="350" x2="915" y2="503" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<text x="860.0" y="400.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">Scan label</text>
+<rect x="1080" y="320" width="260" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1210.0" y="343.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Goals</text>
+<text x="1210.0" y="362.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">edit goal</text>
+<rect x="1080" y="410" width="260" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1210.0" y="433.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Help and FAQ</text>
+<text x="1210.0" y="452.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">12 questions</text>
+<rect x="1080" y="500" width="260" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1210.0" y="523.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Legal</text>
+<text x="1210.0" y="542.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">policy, terms, online copy</text>
+<rect x="1080" y="640" width="260" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1210.0" y="663.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Login</text>
+<text x="1210.0" y="682.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">after Sign out</text>
+<rect x="1080" y="730" width="260" height="56" rx="10" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="1210.0" y="753.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000" font-family="Arial, Helvetica, sans-serif">Login</text>
+<text x="1210.0" y="772.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif">after Delete account (password)</text>
+<path d="M1340 142 H1362 V758 H1342" fill="none" stroke="#000000" stroke-width="1.1"/>
+<line x1="1362" y1="348" x2="1342" y2="348" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="1362" y1="438" x2="1342" y2="438" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="1362" y1="528" x2="1342" y2="528" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="1362" y1="668" x2="1342" y2="668" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<line x1="1362" y1="758" x2="1342" y2="758" stroke="#000000" stroke-width="1.1" marker-end="url(#f)"/>
+<rect x="380" y="680" width="650" height="170" rx="0" fill="#fff" stroke="#000000" stroke-width="1"/>
+<text x="392.0" y="702.0" font-size="12" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Notes</text>
+<text x="392.0" y="726.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">The lock screen (fingerprint) covers any screen after 30 s in the background.</text>
+<text x="392.0" y="746.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Changing the language redraws the navigator and returns to Settings.</text>
+<text x="392.0" y="766.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Signed out, the diary screens are not registered, so they cannot be reached.</text>
+<text x="392.0" y="786.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">The Scanner and Add food return results with popTo(…, merge).</text>
+</svg>
