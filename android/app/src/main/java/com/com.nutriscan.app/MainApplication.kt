@@ -14,7 +14,7 @@ class MainApplication : Application(), ReactApplication {
       context = applicationContext,
       packageList =
         PackageList(this).packages.apply {
-          add(NutriScanPackage()) // the app's own native modules: LabelReaderModule.kt, HapticsModule.kt
+          add(NutriScanPackage()) // the app's own native modules: label reader, haptics, step counter, time picker
         },
     )
   }
