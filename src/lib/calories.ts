@@ -77,7 +77,7 @@ export function chartPoints(values: number[], w: number, h: number, pad = 8) {
   }));
 }
 
-/** Steps: kcal burned walking, about 0.5 kcal per kg of body weight per 1,000 steps (an estimate). */
+/** Steps: the default daily goal (changeable in Settings), and kcal burned walking: about 0.5 kcal per kg of body weight per 1,000 steps (an estimate). */
 export const STEP_GOAL = 10000;
 export const stepKcal = (steps: number, weightKg: number) => Math.round((steps / 1000) * 0.5 * weightKg);
 
@@ -93,7 +93,7 @@ export function nextDayCount(saved: DayCount | null, now: number, at: number): D
   return { base, last: now, since: saved.since };
 }
 
-/** Water: glasses of 250 ml, 8 a day (2 litres). Salt: at most 6 g a day (adult reference intake). */
+/** Water: glasses of 250 ml, 8 a day (2 litres) by default, changeable in Settings. Salt: at most 6 g a day (adult reference intake). */
 export const WATER_GOAL = 8;
 export const GLASS_ML = 250;
 export const SALT_MAX_G = 6;

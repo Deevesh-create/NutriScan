@@ -10,8 +10,8 @@ A calorie tracker for weight loss, built in React Native (no Expo) for the Mobil
   - recognise a meal from a photo (TensorFlow Lite model, on the phone)
   - search by name (Mauritian dishes included)
   - type the values in
-- **Goal and progress:** calorie target from the Mifflin-St Jeor equation, weight log with chart, 7-day history, streaks and badges
-- **Phone features:** camera and flash, fingerprint lock, meal reminders, step counter sensor (or Samsung Health via Health Connect), haptics
+- **Goal and progress:** calorie target from the Mifflin-St Jeor equation, step and water goals you choose, weight log with chart, 7-day history, streaks and badges
+- **Phone features:** camera and flash, fingerprint lock, meal reminders (each meal switched on or off, at a time you pick on Android's clock), step counter sensor (or Samsung Health via Health Connect), haptics
 - **Security:**
   - Supabase login (JWT); session encrypted with a key in the Android Keystore
   - Row Level Security on every table
@@ -38,6 +38,6 @@ A calorie tracker for weight loss, built in React Native (no Expo) for the Mobil
 - `src/components`: shared UI (Scanner, Field, Button, cards)
 - `src/lib`: logic (calories, food search, label parser, offline queue, i18n)
 - `src/contexts`: auth and language state
-- `android/app/src/main/java/com/com.nutriscan.app`: native modules (label reader, haptics)
+- `android/app/src/main/java/com/com.nutriscan.app`: native modules (label reader, step counter, haptics, time picker)
 - `supabase`: database SQL and the USDA Edge Function
 - `docs`: test checklists, assignment checklist, architecture diagram, screenshots, legal texts

@@ -31,13 +31,13 @@
 <text x="62.0" y="516.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">secure storage: session encrypted with an AES key held in the Android Keystore</text>
 <rect x="50" y="557" width="860" height="97" rx="0" fill="#fff" stroke="#000000" stroke-width="1"/>
 <text x="62.0" y="577.0" font-size="13" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Native bridge</text>
-<text x="62.0" y="599.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Kotlin modules: LabelReader (ML Kit text), StepCounter (sensor), Haptics</text>
+<text x="62.0" y="599.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Kotlin modules: LabelReader (ML Kit text), StepCounter (sensor), Haptics, TimePicker</text>
 <text x="62.0" y="618.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">VisionCamera 5 + ML Kit barcode scanner  ·  TensorFlow Lite (food_v1.tflite)</text>
 <text x="62.0" y="637.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">notify-kit (exact alarms)  ·  react-native-keychain  ·  react-native-health-connect</text>
 <rect x="50" y="678" width="860" height="78" rx="0" fill="#fff" stroke="#000000" stroke-width="1"/>
 <text x="62.0" y="698.0" font-size="13" font-weight="bold" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Android platform</text>
 <text x="62.0" y="720.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">Camera + torch  ·  step counter sensor  ·  BiometricPrompt + Keystore</text>
-<text x="62.0" y="739.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">AlarmManager + notifications  ·  Health Connect  ·  Vibrator</text>
+<text x="62.0" y="739.0" font-size="12" font-weight="normal" text-anchor="start" fill="#000000" font-family="Arial, Helvetica, sans-serif">AlarmManager + notifications  ·  TimePickerDialog  ·  Health Connect  ·  Vibrator</text>
 <line x1="480" y1="189" x2="480" y2="213" stroke="#000000" stroke-width="1.1" stroke-dasharray="6 4" marker-end="url(#o)"/>
 <text x="488.0" y="205.0" font-size="11" font-weight="normal" text-anchor="start" fill="#555555" font-family="Arial, Helvetica, sans-serif">«use»</text>
 <line x1="480" y1="291" x2="480" y2="315" stroke="#000000" stroke-width="1.1" stroke-dasharray="6 4" marker-end="url(#o)"/>

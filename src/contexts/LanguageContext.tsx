@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { type Lang, loadLanguage, saveLanguage } from '../lib/i18n';
+import { restoreReminders } from '../lib/reminders';
 
 const LanguageContext = createContext<{ lang: Lang; setLang: (lang: Lang) => void } | null>(null);
 
@@ -10,6 +11,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     loadLanguage().then(setLangState);
   }, []);
+
+  useEffect(() => {
+    if (lang) restoreReminders().catch(() => {});
+  }, [lang]);
 
   const setLang = useCallback((next: Lang) => {
     saveLanguage(next);

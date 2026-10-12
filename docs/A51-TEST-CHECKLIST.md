@@ -97,3 +97,11 @@ Phone: Samsung Galaxy A51, One UI 5.1, Android 13. Run each test on the **Pixel 
 - [ ] **P47** Today → Steps → **Count my steps** → allow Physical activity → "0 · counted by this phone since HH:MM"; walk 30 steps → History → Today → the number goes up *(10 Oct: allowed and reading; the walk still to check)*
 - [x] **P48** No internet, more than 1 hour after last use → open NutriScan → your diary opens in a few seconds (not the Login screen); "Agree" offline → "Could not save… check your connection" *(10 Oct, after the fix)*
 - [x] **P49** Biggest text (Settings → Display → Font size, max) → nothing cut off; tab labels fully visible *(10 Oct: tab labels were clipped; fixed and rechecked in light mode)*
+
+### Added 12 Oct (version 1.1)
+- [x] **P50** Install 1.1 over 1.0 (`adb install -r`, same key) → still signed in; Settings → **Meal reminders** shows Breakfast, Lunch and Dinner all on at 08:30, 13:00, 19:30 (1.0's single switch carried over); `dumpsys alarm` still lists three exact alarms *(12 Oct)*
+- [x] **P51** Tap Dinner's time → Android's clock opens → pick a time → OK → the row shows it, and `dumpsys alarm` has Dinner's exact alarm at that time *(12 Oct: 22:18, `exactAllowReason=permission`)*
+- [x] **P52** Settings → Steps a day **7,500**, water **10** → Today shows "of 7,500" and "of 10 glasses" with 10 drops; set back to 10,000 and 8 *(12 Oct)*
+- [x] **P53** Steps from Health Connect: 4,200 test steps added with Google's Health Connect Toolbox → Today shows 4,200 and "About 210 kcal burned walking, from Health Connect" *(12 Oct; the wording said "Samsung Health" until 1.1 build 3)*
+- [x] **P54** Switch Lunch off → only two alarms in `dumpsys alarm`; leave and come back to Settings → still off; switch it on again *(12 Oct: 2 alarms, then 3)*
+- [x] **P55** Release build with an empty password → the script stops with "No password typed" (it used to fall back to the debug key, which the A51 refused: `INSTALL_FAILED_UPDATE_INCOMPATIBLE`) *(12 Oct: guard condition checked; not run end to end)*

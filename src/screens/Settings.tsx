@@ -4,31 +4,32 @@ import { Ionicons } from '@react-native-vector-icons/ionicons/static';
 import { appLock, useAuth } from '../contexts/AuthContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { DeleteAccount } from '../components/DeleteAccount';
+import { mealLabel } from '../lib/calories';
+import { STEP_CHOICES, WATER_CHOICES, useDailyGoals } from '../lib/dailyGoals';
 import { LANGUAGES, dateLocale, num, t } from '../lib/i18n';
-import { disableReminders, enableReminders, remindersEnabled } from '../lib/reminders';
+import { REMINDERS, type Reminder, type ReminderMeal, type Reminders, loadReminders, pickTime, saveReminders } from '../lib/reminders';
 import { useRootNav } from '../navigation';
 import { Button } from '../components/Button';
 import { Chips } from '../components/Chips';
-import { colors, ui } from '../lib/theme';
+import { colors, radius, ui } from '../lib/theme';
 
 export default function Settings() {
   const navigation = useRootNav();
   const { session, goals, signOut } = useAuth();
   const { lang, setLang } = useLanguage();
-  const [reminders, setReminders] = useState(false);
+  const [reminders, setReminders] = useState<Reminders>();
   const [lock, setLock] = useState(false);
+  const [daily, setDaily] = useDailyGoals();
 
   useEffect(() => {
-    remindersEnabled().then(setReminders);
+    loadReminders().then(setReminders);
     appLock.isOn().then(setLock);
   }, []);
 
-  const toggleReminders = async (on: boolean) => {
-    if (!on) {
-      await disableReminders();
-      return setReminders(false);
-    }
-    if (await enableReminders()) return setReminders(true);
+  const changeReminder = async (meal: ReminderMeal, change: Partial<Reminder>) => {
+    if (!reminders) return;
+    const next = { ...reminders, [meal]: { ...reminders[meal], ...change } };
+    if (await saveReminders(next)) return setReminders(next);
     Alert.alert(t('Notifications are blocked'), t('Allow notifications for NutriScan in your phone settings to get meal reminders.'), [
       { text: t('Cancel'), style: 'cancel' },
       { text: t('Open settings'), onPress: () => Linking.openSettings() },
@@ -79,9 +80,30 @@ export default function Settings() {
         <Button title="Edit goal" icon="create-outline" variant="secondary" onPress={() => navigation.navigate('Goals')} />
       </View>
 
+      <View style={ui.card}>
+        <Text style={ui.heading}>{t('Step and water goals')}</Text>
+        <Text style={ui.label}>{t('Steps a day')}</Text>
+        <Chips options={STEP_CHOICES.map((n) => ({ label: num(n), value: n }))} value={daily.steps} onChange={(steps) => setDaily({ ...daily, steps })} />
+        <Text style={ui.label}>{t('Glasses of water a day (250 ml each)')}</Text>
+        <Chips options={WATER_CHOICES.map((n) => ({ label: num(n), value: n }))} value={daily.water} onChange={(water) => setDaily({ ...daily, water })} />
+      </View>
+
       <View style={[ui.card, styles.list]}>
-        <SwitchRow label={t('Meal reminders')} hint={t('8:30, 13:00 and 19:30 every day')} value={reminders} onChange={toggleReminders} />
-        <View style={styles.divider} />
+        <View style={styles.listHead}>
+          <Text style={ui.heading}>{t('Meal reminders')}</Text>
+          <Text style={ui.caption}>{t('Every day. Tap a time to change it.')}</Text>
+        </View>
+        {REMINDERS.map(({ meal }) =>
+          reminders ? (
+            <View key={meal}>
+              <View style={styles.divider} />
+              <ReminderRow meal={meal} value={reminders[meal]} onChange={(change) => changeReminder(meal, change)} />
+            </View>
+          ) : null,
+        )}
+      </View>
+
+      <View style={[ui.card, styles.list]}>
         <SwitchRow
           label={t('Fingerprint lock')}
           hint={t('Ask for your fingerprint when you open the app')}
@@ -126,6 +148,36 @@ function LinkRow({ label, onPress }: { label: string; onPress: () => void }) {
   );
 }
 
+function ReminderRow({ meal, value, onChange }: { meal: ReminderMeal; value: Reminder; onChange: (change: Partial<Reminder>) => void }) {
+  const name = t(mealLabel(meal));
+  const time = new Date(2000, 0, 1, value.hour, value.minute).toLocaleTimeString(dateLocale(), { hour: '2-digit', minute: '2-digit' });
+  const change = async () => {
+    const picked = await pickTime(value.hour, value.minute);
+    if (picked) onChange(picked);
+  };
+  return (
+    <View style={[ui.row, styles.switchRow]}>
+      <Text style={[ui.body, ui.flex]}>{name}</Text>
+      <Pressable
+        onPress={change}
+        accessibilityRole="button"
+        accessibilityLabel={t('{meal} reminder time: {time}. Tap to change it.', { meal: name, time })}
+        style={[styles.time, !value.on && styles.timeOff]}
+      >
+        <Ionicons name="time-outline" size={18} color={colors.basil} />
+        <Text style={[ui.body, styles.timeText]}>{time}</Text>
+      </Pressable>
+      <Switch
+        value={value.on}
+        onValueChange={(on) => onChange({ on })}
+        trackColor={{ true: colors.basil, false: colors.line }}
+        thumbColor={colors.white}
+        accessibilityLabel={t('{meal} reminder', { meal: name })}
+      />
+    </View>
+  );
+}
+
 function SwitchRow(props: { label: string; hint: string; value: boolean; onChange: (on: boolean) => void }) {
   return (
     <View style={[ui.row, styles.switchRow]}>
@@ -148,6 +200,18 @@ const styles = StyleSheet.create({
   tight: { gap: 2 },
   list: { paddingVertical: 4, gap: 0 },
   switchRow: { paddingVertical: 12, minHeight: 56 },
+  listHead: { gap: 2, paddingTop: 12, paddingBottom: 8 },
+  time: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    minHeight: 44,
+    paddingHorizontal: 12,
+    borderRadius: radius.pill,
+    backgroundColor: colors.basilSoft,
+  },
+  timeOff: { opacity: 0.6 },
+  timeText: { color: colors.basil, fontVariant: ['tabular-nums'] },
   divider: { height: 1, backgroundColor: colors.line },
   agreed: { paddingBottom: 12 },
 });

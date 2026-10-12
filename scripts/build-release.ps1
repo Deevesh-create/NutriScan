@@ -15,6 +15,8 @@ if (-not (Test-Path $keystore)) {
 }
 
 $secure = Read-Host 'Release key password' -AsSecureString
+# An empty answer would let Gradle fall back to the debug key, which can't update an installed release.
+if ($secure.Length -eq 0) { throw 'No password typed. Run the script again and type the release key password.' }
 $env:NUTRISCAN_KEYSTORE_PASSWORD = [Runtime.InteropServices.Marshal]::PtrToStringBSTR([Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
 try {
   Push-Location (Join-Path $root 'android')

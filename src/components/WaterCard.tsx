@@ -2,7 +2,8 @@ import { useCallback, useState } from 'react';
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { Ionicons } from '@react-native-vector-icons/ionicons/static';
-import { GLASS_ML, WATER_GOAL } from '../lib/calories';
+import { GLASS_ML } from '../lib/calories';
+import { useDailyGoals } from '../lib/dailyGoals';
 import { haptic } from '../lib/haptics';
 import { num, t } from '../lib/i18n';
 import { cacheKey, isOffline, loadCached, saveCached } from '../lib/offline';
@@ -12,6 +13,7 @@ import { colors, radius, ui } from '../lib/theme';
 /** Glasses of water for one diary day, with + and −. One row per day in `water_intake`. */
 export function WaterCard({ day, userId }: { day: string; userId: string }) {
   const [glasses, setGlasses] = useState(0);
+  const [{ water: goal }] = useDailyGoals();
   const key = cacheKey(userId, `water-${day}`);
 
   useFocusEffect(
@@ -54,7 +56,7 @@ export function WaterCard({ day, userId }: { day: string; userId: string }) {
             {t('Water')}
           </Text>
           <Text style={ui.caption}>
-            {t('{n} of {goal} glasses', { n: glasses, goal: WATER_GOAL })} · {num(glasses * GLASS_ML)} ml
+            {t('{n} of {goal} glasses', { n: glasses, goal })} · {num(glasses * GLASS_ML)} ml
           </Text>
         </View>
         <Pressable
@@ -71,7 +73,7 @@ export function WaterCard({ day, userId }: { day: string; userId: string }) {
         </Pressable>
       </View>
       <View style={styles.drops} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-        {Array.from({ length: Math.max(WATER_GOAL, glasses) }, (_, i) => (
+        {Array.from({ length: Math.max(goal, glasses) }, (_, i) => (
           <Ionicons
             key={i}
             name={i < glasses ? 'water' : 'water-outline'}

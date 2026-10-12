@@ -65,7 +65,12 @@ class LabelReaderModule(context: ReactApplicationContext) : ReactContextBaseJava
 /** The app's own native modules (registered in MainApplication.kt). */
 class NutriScanPackage : ReactPackage {
   override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> =
-    listOf(LabelReaderModule(reactContext), HapticsModule(reactContext), StepCounterModule(reactContext))
+    listOf(
+      LabelReaderModule(reactContext),
+      HapticsModule(reactContext),
+      StepCounterModule(reactContext),
+      TimePickerModule(reactContext),
+    )
 
   override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> = emptyList()
 }

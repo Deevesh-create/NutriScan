@@ -20,7 +20,7 @@
 |---|---|---|
 | Camera | ✅ | Barcode scan, nutrition-label reading, meal photo AI, flash button |
 | Sensors | 🟡 | Fingerprint sensor ✅ · steps from Samsung Health via Health Connect (connected; Samsung had not synced yet) · vibration (haptics; phone's touch vibration was off) |
-| Notifications | 🟡 | 3 daily meal reminders, scheduled as exact alarms ✅. Did one arrive on 9 Oct? (P23) |
+| Notifications | ✅ | Daily breakfast, lunch and dinner reminders, scheduled as exact alarms; each switched on or off, time picked on Android's clock (1.1). Arrived on 9 Oct (P23) |
 | File storage | 🟡 | Label photos saved, read and then deleted; offline copy of the diary on the phone; policy files in Supabase Storage. No user media upload (not needed: already above 2) |
 | GPS | ❌ | Not used, and not needed for a calorie tracker. Explain why in the report |
 

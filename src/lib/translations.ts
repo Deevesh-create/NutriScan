@@ -183,8 +183,8 @@ export const FR: Record<string, string> = {
   // Steps
   Steps: 'Pas',
   'of {n}': 'sur {n}',
-  'About {kcal} kcal burned walking, from Samsung Health via Health Connect. Not added to your calorie target.':
-    'Environ {kcal} kcal brûlées en marchant, depuis Samsung Health via Health Connect. Non ajoutées à votre objectif.',
+  'About {kcal} kcal burned walking, from Health Connect. Not added to your calorie target.':
+    'Environ {kcal} kcal brûlées en marchant, depuis Health Connect. Non ajoutées à votre objectif.',
   'Steps not allowed': 'Pas non autorisés',
   'NutriScan can only show your steps if Health Connect allows it.': "NutriScan ne peut afficher vos pas que si Health Connect l'autorise.",
   'Open Health Connect': 'Ouvrir Health Connect',
@@ -262,7 +262,12 @@ export const FR: Record<string, string> = {
   maintaining: 'maintien',
   'Edit goal': "Modifier l'objectif",
   'Meal reminders': 'Rappels de repas',
-  '8:30, 13:00 and 19:30 every day': '8 h 30, 13 h et 19 h 30 chaque jour',
+  'Every day. Tap a time to change it.': 'Chaque jour. Touchez une heure pour la modifier.',
+  '{meal} reminder time: {time}. Tap to change it.': "{meal} : rappel à {time}. Touchez pour changer l'heure.",
+  '{meal} reminder': 'Rappel : {meal}',
+  'Step and water goals': "Objectifs de pas et d'eau",
+  'Steps a day': 'Pas par jour',
+  'Glasses of water a day (250 ml each)': "Verres d'eau par jour (250 ml chacun)",
   'Fingerprint lock': 'Verrouillage par empreinte',
   'Ask for your fingerprint when you open the app': "Demander l'empreinte à l'ouverture de l'application",
   Language: 'Langue',
@@ -597,8 +602,8 @@ export const MFE: Record<string, string> = {
   // Steps
   Steps: 'Pa',
   'of {n}': 'lor {n}',
-  'About {kcal} kcal burned walking, from Samsung Health via Health Connect. Not added to your calorie target.':
-    'Apepre {kcal} kcal brile kan ou marse, depi Samsung Health par Health Connect. Pa azoute dan ou lobzektif.',
+  'About {kcal} kcal burned walking, from Health Connect. Not added to your calorie target.':
+    'Apepre {kcal} kcal brile kan ou marse, depi Health Connect. Pa azoute dan ou lobzektif.',
   'Steps not allowed': 'Bann pa pa otorize',
   'NutriScan can only show your steps if Health Connect allows it.': 'NutriScan kapav montre ou bann pa zis si Health Connect dakor.',
   'Open Health Connect': 'Ouver Health Connect',
@@ -676,7 +681,12 @@ export const MFE: Record<string, string> = {
   maintaining: 'gard mem pwa',
   'Edit goal': 'Sanz lobzektif',
   'Meal reminders': 'Rapel repa',
-  '8:30, 13:00 and 19:30 every day': '8:30, 13:00 ek 19:30 sak zour',
+  'Every day. Tap a time to change it.': 'Sak zour. Tous enn ler pou sanz li.',
+  '{meal} reminder time: {time}. Tap to change it.': '{meal}: rapel a {time}. Tous pou sanz ler-la.',
+  '{meal} reminder': 'Rapel {meal}',
+  'Step and water goals': 'Lobzektif pa ek dilo',
+  'Steps a day': 'Pa par zour',
+  'Glasses of water a day (250 ml each)': 'Ver dilo par zour (250 ml sakenn)',
   'Fingerprint lock': 'Blokaz par lanprint',
   'Ask for your fingerprint when you open the app': 'Dimann ou lanprint kan ou ouver aplikasion',
   Language: 'Langaz',

@@ -2,7 +2,8 @@ import { useCallback, useState } from 'react';
 import { Alert, Linking, StyleSheet, Text, View } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { useAuth } from '../contexts/AuthContext';
-import { STEP_GOAL, stepKcal } from '../lib/calories';
+import { stepKcal } from '../lib/calories';
+import { useDailyGoals } from '../lib/dailyGoals';
 import { haptic } from '../lib/haptics';
 import { dateLocale, num, t } from '../lib/i18n';
 import {
@@ -18,11 +19,12 @@ import { colors, radius, ui } from '../lib/theme';
 import { Button } from './Button';
 
 /**
- * One day's steps, with an estimate of kcal burned walking. Samsung Health's whole-day count when it
- * reaches Health Connect, otherwise the phone's own step sensor.
+ * One day's steps, with an estimate of kcal burned walking. The whole-day count in Health Connect
+ * (from Samsung Health or another app) when there is one, otherwise the phone's own step sensor.
  */
 export function StepsCard({ day, isToday }: { day: string; isToday: boolean }) {
   const { goals } = useAuth();
+  const [{ steps: goal }] = useDailyGoals();
   const [hc, setHc] = useState<Steps>();
   const [phone, setPhone] = useState<{ steps: number; since: number } | null>(null);
   const [allowed, setAllowed] = useState(true);
@@ -70,16 +72,16 @@ export function StepsCard({ day, isToday }: { day: string; isToday: boolean }) {
       </Text>
       {steps != null ? (
         <>
-          <View style={styles.figures} accessible accessibilityLabel={`${steps} / ${STEP_GOAL}`}>
+          <View style={styles.figures} accessible accessibilityLabel={`${steps} / ${goal}`}>
             <Text style={ui.title}>{num(steps)}</Text>
-            <Text style={ui.caption}>{t('of {n}', { n: STEP_GOAL })}</Text>
+            <Text style={ui.caption}>{t('of {n}', { n: goal })}</Text>
           </View>
           <View style={styles.track}>
-            <View style={[styles.fill, { width: `${Math.min(100, (steps / STEP_GOAL) * 100)}%` }]} />
+            <View style={[styles.fill, { width: `${Math.min(100, (steps / goal) * 100)}%` }]} />
           </View>
           <Text style={ui.caption}>
             {fromHc
-              ? t('About {kcal} kcal burned walking, from Samsung Health via Health Connect. Not added to your calorie target.', {
+              ? t('About {kcal} kcal burned walking, from Health Connect. Not added to your calorie target.', {
                   kcal: stepKcal(steps, goals?.weight_kg ?? 70),
                 })
               : t('About {kcal} kcal burned walking, counted by this phone since {time}. Not added to your calorie target.', {
