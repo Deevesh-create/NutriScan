@@ -30,7 +30,7 @@ A calorie tracker for weight loss, built in React Native (no Expo) for the Mobil
    - Storage: a public bucket `legal` holding the files from `docs/legal/`
 4. Android:
    - `npx react-native run-android` (debug), or
-   - `cd android && gradlew assembleRelease` (APK in `android/app/build/outputs/apk/release/`)
+   - `scripts/build-release.ps1`: signed release APKs (arm64, x86_64, universal) with your own key; asks for the key password
 5. `npm run check`: calorie, label-parser and translation self-checks.
 
 ## Project layout

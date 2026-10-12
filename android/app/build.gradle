@@ -92,15 +92,31 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        // Own release key: android/app/nutriscan-release.keystore (git-ignored). The password is read from the
+        // NUTRISCAN_KEYSTORE_PASSWORD environment variable, so it is never written into the project.
+        release {
+            storeFile file('nutriscan-release.keystore')
+            storePassword System.getenv('NUTRISCAN_KEYSTORE_PASSWORD')
+            keyAlias 'nutriscan'
+            keyPassword System.getenv('NUTRISCAN_KEYSTORE_PASSWORD')
+        }
+    }
+    // One APK per processor type (smaller downloads) plus a universal APK that runs everywhere.
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'arm64-v8a', 'x86_64'
+            universalApk true
+        }
     }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
         }
         release {
-            // Caution! In production, you need to generate your own keystore file.
-            // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            // Signed with the own release key when its password is set; otherwise the debug key (local test builds).
+            signingConfig System.getenv('NUTRISCAN_KEYSTORE_PASSWORD') ? signingConfigs.release : signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
