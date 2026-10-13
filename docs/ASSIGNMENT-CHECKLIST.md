@@ -11,7 +11,7 @@
 | Multiple connected screens | ✅ | 14 screens: Login, Register, Consent, Setup, Today, History, Settings, Add food, Scan, Snap, Label, Goals, Legal, plus tabs |
 | Real logic and state management | ✅ | Auth and language contexts, offline queue that syncs later, calorie target updates when weight changes |
 | Authentication and secure flows | ✅ | Email + password, email confirmation, consent screen, fingerprint lock, delete account |
-| Realistic, production-like UX | ✅ | Redesign inspired by MyNetDiary, mocked up in Claude Design; dark mode |
+| Realistic, production-like UX | ✅ | Redesign, mocked up in Claude Design; dark mode |
 | Cross-platform | 🟡 | React Native with the `ios/` folder kept, but built and tested on Android only. Say this in the report |
 | Topic approved | ❓ | Matches the brief's suggested "Health Monitoring Application using device sensors and activity tracking". Get the approval in writing |
 
