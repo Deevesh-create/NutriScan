@@ -21,7 +21,7 @@ export async function recognise(image: Image): Promise<Suggestion[]> {
   const input = model.inputs[0]; // e.g. shape [1, 224, 224, 3]
   const [, h, w] = input.shape;
 
-  // ponytail: ignores the photo's orientation; food looks much the same rotated, rotate first if accuracy suffers.
+  // Limitation: ignores the photo's orientation; food looks much the same rotated, rotate first if accuracy suffers.
   const side = Math.min(image.width, image.height);
   const x = Math.floor((image.width - side) / 2);
   const y = Math.floor((image.height - side) / 2);

@@ -75,7 +75,7 @@ const formFrom = (e: Logged): typeof EMPTY => {
 };
 
 /**
- * Add a food, MyFitnessPal style: search the food databases (or arrive from a barcode scan or a
+ * Add a food: search the food databases (or arrive from a barcode scan or a
  * meal photo), tap a result to fill in kcal and macros per 100 g, pick a serving, save.
  * With an `entry` it edits that diary entry instead; with a `day` it adds to that day, not today.
  */

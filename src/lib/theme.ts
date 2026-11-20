@@ -44,7 +44,7 @@ const dark: typeof light = {
 
 /**
  * Follows the phone's dark-mode setting when the app starts.
- * ponytail: picked once at launch (every StyleSheet reads these at load); switching live would need
+ * Limitation: picked once at launch (every StyleSheet reads these at load); switching live would need
  * every screen to read colours from a hook. Reopen the app after changing the phone's theme.
  */
 export const isDark = Appearance.getColorScheme() === 'dark';

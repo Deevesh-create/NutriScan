@@ -46,7 +46,7 @@ export const per100g = (amount: number, grams: number) => Math.round((amount * 1
 /**
  * Daily grams of carbs, protein and fat for a calorie target: 45% / 20% / 35% of the kcal
  * (inside the usual adult ranges), at 4, 4 and 9 kcal per gram.
- * ponytail: one fixed split; add a macro-goal editor if users ask for other diets.
+ * Limitation: one fixed split; add a macro-goal editor if users ask for other diets.
  */
 export const macroTargets = (kcal: number) => ({
   carbs: Math.round((kcal * 0.45) / 4),

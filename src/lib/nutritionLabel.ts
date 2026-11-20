@@ -80,7 +80,7 @@ const gramsIn = (text: string) => {
 /**
  * Reads kcal, fat, carbs and protein per 100 g from a nutrition table. EU and Mauritian labels give
  * per 100 g (first column); US labels give per serving, converted with the serving size in grams.
- * ponytail: row matching by position and keywords, not a layout model; covers the common table layouts.
+ * Limitation: row matching by position and keywords, not a layout model; covers the common table layouts.
  */
 export function parseLabel(lines: OcrLine[]): LabelValues {
   const all = lines.map((l) => l.text).join(' ');

@@ -46,7 +46,7 @@ let syncing: Promise<void> | null = null;
 /**
  * Sends foods added offline, oldest first, stopping at the first failure so the rest wait for next
  * time. Called before the diary loads, so sent foods come back in the normal list.
- * ponytail: a lost reply after a successful insert means it is sent twice; add a client-made id if that shows up.
+ * Limitation: a lost reply after a successful insert means it is sent twice; add a client-made id if that shows up.
  */
 export function syncPending(userId: string): Promise<void> {
   syncing ??= (async () => {

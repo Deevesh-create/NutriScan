@@ -12,7 +12,7 @@ export function useProgress() {
 
   const reload = useCallback(async () => {
     if (!goals) return;
-    // ponytail: reads every diary row (Supabase returns up to 1,000); move to a SQL view once diaries get long.
+    // Limitation: reads every diary row (Supabase returns up to 1,000); move to a SQL view once diaries get long.
     const { data, error } = await supabase.from('food_entries').select('eaten_on, kcal, meal, source, barcode, name');
     if (error) return; // the screen shows its own "could not load" message for the diary
     // Foods saved before the `source` column existed got 'manual'; a barcode means it was scanned.

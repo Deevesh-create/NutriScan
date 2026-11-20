@@ -29,7 +29,7 @@ class MainActivity : ReactActivity() {
     HealthConnectPermissionDelegate.setPermissionDelegate(this)
     // The diary is health data: show a blank card in the app switcher (Recents) instead of a
     // snapshot of the screen. Unlike FLAG_SECURE, normal screenshots still work.
-    // ponytail: Android 13+ only; older phones still show the snapshot (FLAG_SECURE would also block screenshots).
+    // Limitation: Android 13+ only; older phones still show the snapshot (FLAG_SECURE would also block screenshots).
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) setRecentsScreenshotEnabled(false)
   }
 }

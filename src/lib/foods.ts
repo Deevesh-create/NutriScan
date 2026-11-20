@@ -174,7 +174,7 @@ export function barcodeVariants(code: string): string[] {
  * Order search results the way people expect: your own Mauritian foods, then plain foods
  * ("Banana, raw"), then branded products. Within each group, names that start with what
  * you typed come first, then shorter (simpler) names. Duplicates are dropped.
- * ponytail: simple heuristic, not full-text relevance; good enough for 3 short lists.
+ * Limitation: simple heuristic, not full-text relevance; good enough for 3 short lists.
  */
 export function rankResults(query: string, items: FoodResult[]): FoodResult[] {
   const first = query.trim().toLowerCase().split(/\s+/)[0] ?? '';

@@ -27,7 +27,7 @@ async function searchOwn(table: string, toFood: (r: any) => FoodResult | null, q
 }
 
 /**
- * MyFitnessPal-style search across every source at once. Throws only when no source answered,
+ * Search across every source at once. Throws only when no source answered,
  * which almost always means there's no internet.
  */
 export async function searchFoods(query: string): Promise<{ results: FoodResult[]; alias?: string }> {

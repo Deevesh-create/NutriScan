@@ -22,7 +22,7 @@ apply plugin: "com.facebook.react.rootproject"
 
 // Windows caps CMake object paths at 250 characters and long paths are off by default. Libraries that
 // build C++ from node_modules (the barcode scanner went over) get a short build folder instead.
-// ponytail: only needed on Windows without LongPathsEnabled; harmless elsewhere.
+// Limitation: only needed on Windows without LongPathsEnabled; harmless elsewhere.
 subprojects {
     plugins.withId("com.android.library") {
         android.externalNativeBuild.cmake.buildStagingDirectory =

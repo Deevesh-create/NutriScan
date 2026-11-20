@@ -72,7 +72,7 @@ export const allowPhoneSteps = async () => (await PermissionsAndroid.request(REC
  * One day's steps from the phone's sensor, counted from the first time NutriScan reads it that day
  * (the sensor itself only counts from when the phone was switched on). Kept on the phone only.
  * Past days show their last reading; null when there is nothing to show.
- * ponytail: steps before the day's first reading are missed; a midnight alarm could take that reading.
+ * Limitation: steps before the day's first reading are missed; a midnight alarm could take that reading.
  */
 export async function phoneSteps(day: string, isToday: boolean): Promise<{ steps: number; since: number } | null> {
   const key = `steps-${day}`;
